@@ -1,0 +1,32 @@
+{
+  "name": "reading-assistant",
+  "version": "1.0.0",
+  "description": "Similarity analysis and word frequency analysis of articles. Application of TF - IDF and Cosine Similarity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenzhenbadgirl/reading-assistant.git"
+  },
+  "keywords": [
+    "word",
+    "frequency",
+    "similarity",
+    "keyword"
+  ],
+  "author": "shizhenzhen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhenzhenbadgirl/reading-assistant/issues"
+  },
+  "homepage": "https://github.com/zhenzhenbadgirl/reading-assistant#readme",
+  "dependencies": {
+    "@types/jquery": "^2.0.41",
+    "@types/vue": "^2.0.0",
+    "jquery": "^3.2.1",
+    "vue": "^2.2.6",
+    "sweetalert": "^1.1.3"
+  }
+}
