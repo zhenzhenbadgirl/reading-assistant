@@ -8,12 +8,125 @@
     <title>Document</title>
     <link rel="stylesheet" href="files/normalize.css">
     <link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
     <div class="wrapper">
+
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="javascript:">词频</a></li>
+                    <li><a href="javascript:">相似度</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cutline">
+        </div>
+
+        <div class="main-content">
+            <div class="btns-area">
+                <select name="" id="">
+                    <option value="1">包含小词</option>
+                    <option value="2">不含小词</option>
+                </select>
+                <select name="" id="">
+                    <option value="1">过滤同根词</option>
+                    <option value="2">不过滤同根词</option>
+                </select>
+                <select name="" id="">
+                    <option value="1">取前10名</option>
+                    <option value="2">取前20名</option>
+                </select>
+                <select name="" id="">
+                    <option value="1">包含短语</option>
+                    <option value="2">不含短语</option>
+                </select>
+                <button type="button" v-on:click="analyze">开始分析</button>
+            </div>
+
+            <div class="work-body">
+                <textarea class="form-control" rows="25" v-model="text"></textarea>
+                <div class="result-content" v-if="getResult">
+                    <h4>分析结果：</h4>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th width="40%">Word</th>
+                                <th width="30%">Frequency</th>
+                                <th width="30%">Importance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>衣服</td>
+                                <td>$241.10</td>
+                                <td>$50.20</td>
+                            </tr>
+                            <tr>
+                                <td>化妆品</td>
+                                <td>$30.00</td>
+                                <td>$44.45</td>
+                            </tr>
+                            <tr>
+                                <td>食物</td>
+                                <td>$730.40</td>
+                                <td>$650.00</td>
+                            </tr>
+                            <tr>
+                                <td>食物</td>
+                                <td>$730.40</td>
+                                <td>$650.00</td>
+                            </tr>
+                            <tr>
+                                <td>食物</td>
+                                <td>$730.40</td>
+                                <td>$650.00</td>
+                            </tr>
+                            <tr>
+                                <td>衣服</td>
+                                <td>$241.10</td>
+                                <td>$50.20</td>
+                            </tr>
+                            <tr>
+                                <td>化妆品</td>
+                                <td>$30.00</td>
+                                <td>$44.45</td>
+                            </tr>
+                            <tr>
+                                <td>食物</td>
+                                <td>$730.40</td>
+                                <td>$650.00</td>
+                            </tr>
+                            <tr>
+                                <td>食物</td>
+                                <td>$730.40</td>
+                                <td>$650.00</td>
+                            </tr>
+                            <tr>
+                                <td>食物</td>
+                                <td>$730.40</td>
+                                <td>$650.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+
+        </div>
 
     </div>
 
@@ -22,9 +135,16 @@
     <script src="node_modules\sweetalert\dist\sweetalert.min.js"></script>
     <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <script src="node_modules\vue\dist\vue.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
     <!--引入自己的js-->
     <script src="index.js"></script>
+    
 </body>
 
 </html>

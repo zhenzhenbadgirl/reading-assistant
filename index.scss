@@ -1,0 +1,101 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    width: 1200px;
+    height: 60px;
+    margin:auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    // background-color: #d14;
+
+    .logo{
+        width: auto;
+        float: left;
+    }
+    .logo img{
+        width: auto;
+        height: 36px;
+    }
+
+    .navbar{
+        float: right;
+        ul{
+            padding:0;
+            margin:0;
+        }
+        li{
+            display: inline;
+            line-height: 36px;
+            margin-left: 10px;
+            font-size: 18px;
+            a{
+                color: grey;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.cutline{
+    width: 100%;
+    height: 2px;
+    background-image: url("images/cutline.png");
+    background-size: 100%;
+}
+
+.main-content{
+    width: 1200px;
+    margin: auto;
+}
+
+.btns-area{    
+    height: 72px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    select, button{
+        width: 120px;
+        height: 32px;
+        border-radius: 5px;
+        outline: none;
+    }
+    select{
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        margin-right:20px;
+        line-height: 2;
+    }
+
+    button{
+        background-color: limegreen;
+        border: none;
+        color: white;
+        float: right;
+    }
+}
+
+.work-body{
+    height: 554px;
+    background-color: #fcfcfc;
+    padding: 20px;
+    textarea{
+        width: 50%;
+        resize: none;
+        float: left;
+    }    
+    .result-content{
+        width: 50%;
+        height: 514px;
+        float: right;
+        padding: 0 0 0 20px;
+        // background-color: white;
+        h4{
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    }
+}
+table{
+    text-align: left;
+}
